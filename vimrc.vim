@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'preservim/nerdtree'
-Plugin 'ryanoasis/vim-devicons'
 
 
 " All of your Plugins must be added before the following line

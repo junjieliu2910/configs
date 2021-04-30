@@ -6,10 +6,10 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'preservim/nerdtree'
-Plugin 'vim-airline/vim-airline'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
 
 " Initialize plugin system
 call plug#end()

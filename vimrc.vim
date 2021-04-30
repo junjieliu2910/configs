@@ -15,12 +15,17 @@ Plugin 'vim-airline/vim-airline'
 call plug#end()
 
 """""""""""""""""""""" Plugin related settings""""""""""""""""""""""""
+" Use default ymc configuration 
+let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+    
+
     
 
 

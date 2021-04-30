@@ -25,7 +25,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 
 """""""""""""""""""""" General Settings """"""""""""""""""""""""""""""
-
+filetype plugin indent on 
 set number
 
 " Set to auto read when a file is changed from the outside

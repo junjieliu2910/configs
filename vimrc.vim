@@ -10,6 +10,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-syntastic/syntastic'
 
 " Initialize plugin system
 call plug#end()

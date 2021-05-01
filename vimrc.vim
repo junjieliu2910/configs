@@ -19,9 +19,6 @@ call plug#end()
 " Use default ymc configuration 
 " let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 
-" Use custom ymc configuration 
-let g:ycm_global_ycm_extra_conf='~/.vim_runtime/plugged/.ycm_extra_conf.py'
-
 
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p

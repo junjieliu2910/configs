@@ -35,6 +35,9 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 filetype plugin indent on 
 set number
 
+" Fix wrong indentation for long line 
+set breakindent
+
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime

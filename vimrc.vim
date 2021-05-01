@@ -40,6 +40,7 @@ set number
 
 " Fix wrong indentation for long line 
 set breakindent
+set breakindentopt=shift:4
 
 " Set to auto read when a file is changed from the outside
 set autoread

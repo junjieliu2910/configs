@@ -12,6 +12,7 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'puremourning/vimspector'
 
 " Initialize plugin system
 call plug#end()

@@ -14,6 +14,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'puremourning/vimspector'
 Plug 'davidhalter/jedi-vim'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 " Initialize plugin system
 call plug#end()

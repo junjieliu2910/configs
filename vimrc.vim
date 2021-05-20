@@ -40,6 +40,7 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 """""""""""""""""""""" General Settings """"""""""""""""""""""""""""""
 filetype plugin indent on 
 set number
+set relativenumber
 
 " Fix wrong indentation for long line 
 set breakindent

@@ -1,20 +1,32 @@
+" Don't be compatible with vi
+set nocompatible
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim plugin
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'jnurmine/Zenburn'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin setting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable tab enhancement for vim-airline
-let g:airline#extensions#tabline#enabled = 1
+" Enable lightline by defualt
+set laststatus=2
+
+" Use zenburn color scheme
+colors zenburn
 
 " Use <F6> to toggle NERDTree
 map <F6> :NERDTreeToggle<CR>
+
+" Set syntax checkers for Syntastic
+let g:syntastic_python_chekers = ['pylint']
+let g:syntastic_cpp_compiler_options = 'std=c++17'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " General settings
@@ -22,9 +34,6 @@ map <F6> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 syntax on
-
-" Don't be compatible with vi
-set nocompatible
 
 " Show line number
 set number
@@ -66,6 +75,9 @@ set shiftwidth=4
 " Shorten tiemout when switch between different mode
 set ttimeout ttimeoutlen=10
 
+" Make backspace work as expected
+set backspace=indent,eol,start
+
 " Use bar cursor in normal mode and line cursor in insert mode
 let &t_SI="\e[6 q"
 let &t_EI="\e[2 q"
@@ -103,6 +115,11 @@ inoremap <leader>q <C-O>:q<cr>
 
 " Autocomplete the braces
 inoremap {<CR> {<CR>}<Esc>ko
+inoremap (<CR> (<CR>)<Esc>ko
+
+
+" Use F7 to open a terminal in bottom, use <Eec> to close the terminal 
+map <F7> :bo term<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""

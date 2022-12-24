@@ -120,6 +120,7 @@ inoremap (<CR> (<CR>)<Esc>ko
 
 " Use F7 to open a terminal in bottom, use <Eec> to close the terminal 
 map <F7> :bo term<cr>
+tnoremap <Esc> <C-\><C-n>:q!<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""

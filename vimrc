@@ -122,6 +122,13 @@ inoremap (<CR> (<CR>)<Esc>ko
 map <F7> :bo term<cr>
 tnoremap <Esc> <C-\><C-n>:q!<CR>
 
+" Use space to trigger search
+map <space> /
+map <C-space> ?
+
+" Remove hightlight
+map <silent> <leader><cr> :noh<cr>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " autocmd
@@ -131,4 +138,7 @@ tnoremap <Esc> <C-\><C-n>:q!<CR>
 autocmd BufWrite * mkview
 autocmd BufWinLeave * mkview
 autocmd BufRead * silent loadview
+
+" Auto generate tags file for c, cpp, python, h, and hpp
+autocmd BufWritePost *.c,*.h,*.cpp,*.hpp,*.C,*.H,*.py silent! !ctags . &
 

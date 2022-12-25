@@ -133,12 +133,3 @@ map <silent> <leader><cr> :noh<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Automatically save and load info about fold
-autocmd BufWrite * mkview
-autocmd BufWinLeave * mkview
-autocmd BufRead * silent loadview
-
-" Auto generate tags file for c, cpp, python, h, and hpp
-autocmd BufWritePost *.c,*.h,*.cpp,*.hpp,*.C,*.H,*.py silent! !ctags . &
-

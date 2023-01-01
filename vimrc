@@ -10,6 +10,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jnurmine/Zenburn'
 Plug 'vim-syntastic/syntastic'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -26,6 +27,7 @@ map <F6> :NERDTreeToggle<CR>
 
 " Set syntax checkers for Syntastic
 let g:syntastic_python_chekers = ['pylint']
+let g:syntastic_cpp_checker = ['gcc']
 let g:syntastic_cpp_compiler_options = 'std=c++17'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -81,6 +83,11 @@ set backspace=indent,eol,start
 " Use bar cursor in normal mode and line cursor in insert mode
 let &t_SI="\e[6 q"
 let &t_EI="\e[2 q"
+
+" Don't generate tmp files
+set nobackup
+set nowritebackup
+
 
 " Redefine map leader
 let mapleader=','

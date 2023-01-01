@@ -27,7 +27,7 @@ map <F6> :NERDTreeToggle<CR>
 
 " Set syntax checkers for Syntastic
 let g:syntastic_python_chekers = ['pylint']
-let g:syntastic_cpp_checker = ['gcc']
+let g:syntastic_cpp_checker = ['gcc', 'clang_check']
 let g:syntastic_cpp_compiler_options = 'std=c++17'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""

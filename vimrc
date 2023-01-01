@@ -27,8 +27,9 @@ map <F6> :NERDTreeToggle<CR>
 
 " Set syntax checkers for Syntastic
 let g:syntastic_python_chekers = ['pylint']
-let g:syntastic_cpp_checker = ['gcc', 'clang_check']
+let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = 'std=c++17'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " General settings
@@ -85,9 +86,14 @@ let &t_SI="\e[6 q"
 let &t_EI="\e[2 q"
 
 " Don't generate tmp files
-set nobackup
-set nowritebackup
-
+let &directory = expand('~/.vim/.vimdata/swap//')
+set backup
+let &backupdir = expand('~/.vim/.vimdata/backup//')
+set undofile
+let &undodir = expand('~/.vim/.vimdata/undo//')
+if !isdirectory(&undodir) | call mkdir(&undodir, "p") | endif
+if !isdirectory(&backupdir) | call mkdir(&backupdir, "p") | endif
+if !isdirectory(&directory) | call mkdir(&directory, "p") | endif
 
 " Redefine map leader
 let mapleader=','

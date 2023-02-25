@@ -23,13 +23,14 @@ set clipboard+=unnamed
 " No timeout (Necessary for which-key plugin)
 set notimeout
 
+" Use the join support for Idea (TODO: Need to know more about it)
+set ideajoin
 
 "========== Activate plugin =============================
 set NERDTree
 set easymotion
-"set surround
+set surround
 set commentary
-set ideajoin
 
 
 "========== Keymap for vim editor =======================
@@ -63,14 +64,8 @@ map <leader><cr> :noh<cr>
 " Toggle Nerd Tree
 map <leader>e :NERDTree<cr>
 
-" Toggle commentary
-map <leader>cc <Plug>CommentaryLine
-
 "========== Keymap for Clion actions ================"
-nnoremap ga :<C-u>action GotoAction<cr>
-nnoremap gc :<C-u>action GotoClass<cr>
 nnoremap gd :<C-u>action GotoDeclaration<cr>
-nnoremap gf :<C-u>action GotoFile<cr>
 nnoremap gi :<C-u>action GotoImplementation<cr>
 nnoremap gu :<C-u>action ShowUsages<cr>
 nnoremap gl :<C-u>action Forward<cr>
@@ -79,4 +74,8 @@ nnoremap gh :<C-u>action Back<cr>
 nnoremap <leader>b :action ToggleLineBreakpoint<cr>
 nnoremap <leader>fs :action FileStructurePopup<cr>
 nnoremap <leader>fp :<C-u>action FindInPath<cr>
+nnoremap <leader>ga :<C-u>action GotoAction<cr>
+nnoremap <leader>gf :<C-u>action GotoFile<cr>
+nnoremap <leader>gc :<C-u>action GotoClass<cr>
+nnoremap <leader>t :<C-u>action ActivateTerminalToolWindow<cr>
 

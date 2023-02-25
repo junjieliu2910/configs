@@ -1,0 +1,82 @@
+"========= General editor setting"
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" highlight search
+set hlsearch
+
+" Don't have the error sound
+set belloff=all
+set visualbell
+
+" Use relative line number
+set number relativenumber
+
+" copy to system clipboard
+set clipboard+=unnamed
+
+" No timeout (Necessary for which-key plugin)
+set notimeout
+
+
+"========== Activate plugin =============================
+set NERDTree
+set easymotion
+"set surround
+set commentary
+set ideajoin
+
+
+"========== Keymap for vim editor =======================
+let mapleader=","
+
+" Exit insert mode with mapleader
+inoremap jk <Esc>
+
+" Create new window
+nnoremap <leader>sv <C-w>v
+nnoremap <leader>sh <C-w>s
+
+" Jump between window
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+" Move between tabs
+nnoremap <space>h gT
+nnoremap <space>l gt
+
+" Move on wrapped line
+nnoremap j gj
+nnoremap k gk
+
+" Remove highlight
+map <leader><cr> :noh<cr>
+
+"========== Keymap for vim plugin
+" Toggle Nerd Tree
+map <leader>e :NERDTree<cr>
+
+" Toggle commentary
+map <leader>cc <Plug>CommentaryLine
+
+"========== Keymap for Clion actions ================"
+nnoremap ga :<C-u>action GotoAction<cr>
+nnoremap gc :<C-u>action GotoClass<cr>
+nnoremap gd :<C-u>action GotoDeclaration<cr>
+nnoremap gf :<C-u>action GotoFile<cr>
+nnoremap gi :<C-u>action GotoImplementation<cr>
+nnoremap gu :<C-u>action ShowUsages<cr>
+nnoremap gl :<C-u>action Forward<cr>
+nnoremap gh :<C-u>action Back<cr>
+
+nnoremap <leader>b :action ToggleLineBreakpoint<cr>
+nnoremap <leader>fs :action FileStructurePopup<cr>
+nnoremap <leader>fp :<C-u>action FindInPath<cr>
+

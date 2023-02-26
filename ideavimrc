@@ -14,6 +14,9 @@ set hlsearch
 set belloff=all
 set visualbell
 
+" Wrap long line
+set wrap
+
 " Use relative line number
 set number relativenumber
 
@@ -77,4 +80,6 @@ nnoremap <leader>ga :<C-u>action GotoAction<cr>
 nnoremap <leader>gf :<C-u>action GotoFile<cr>
 nnoremap <leader>gc :<C-u>action GotoClass<cr>
 nnoremap <leader>t :<C-u>action ActivateTerminalToolWindow<cr>
+nnoremap <leader>mt :<C-u>action MoveEditorToOppositeTabGroup<cr>
+nnoremap <leader>se :<C-u>action ShowErrorDescription<cr>
 

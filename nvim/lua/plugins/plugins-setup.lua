@@ -28,10 +28,27 @@ return require('packer').startup(function(use)
     use("christoomey/vim-tmux-navigator")
     use("nvim-treesitter/nvim-treesitter")
     use("p00f/nvim-ts-rainbow")
+    -- Lsp management
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig"
+    }
+    -- Buffer line
+    use {"akinsho/bufferline.nvim", tart = "v1.2.0", requires = "nvim-tree/nvim-web-devicons"}
+
+    -- Autocompletion
+    use("hrsh7th/nvim-cmp")
+    use("hrsh7th/cmp-path")
+    use("hrsh7th/cmp-cmdline")
+    use("hrsh7th/cmp-nvim-lsp")
+    use("hrsh7th/cmp-nvim-lua")
+    use("L3MON4D3/LuaSnip")
+
+    -- File search
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        requires = { {'nvim-lua/plenary.nvim'} }
     }
     if packer_bootstrap then
         require('packer').sync()

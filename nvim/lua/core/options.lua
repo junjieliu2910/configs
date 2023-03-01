@@ -21,4 +21,4 @@ opt.smartcase = true
 
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[colorscheme vscode]]

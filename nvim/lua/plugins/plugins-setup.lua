@@ -12,12 +12,13 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'
-    use 'folke/tokyonight.nvim'
+    use ("wbthomason/packer.nvim")
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    -- File tree
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -25,30 +26,43 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+
+    -- Window management
     use("christoomey/vim-tmux-navigator")
+
+    -- Color scheme
+    use("Mofiqul/vscode.nvim")
     use("nvim-treesitter/nvim-treesitter")
-    use("p00f/nvim-ts-rainbow")
+    -- use("p00f/nvim-ts-rainbow")
+
     -- Lsp management
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig"
     }
+
     -- Buffer line
     use {"akinsho/bufferline.nvim", tart = "v1.2.0", requires = "nvim-tree/nvim-web-devicons"}
 
     -- Autocompletion
     use("hrsh7th/nvim-cmp")
     use("hrsh7th/cmp-path")
+    use("hrsh7th/cmp-buffer")
     use("hrsh7th/cmp-cmdline")
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-nvim-lua")
+
+    -- Snippets Engine
     use("L3MON4D3/LuaSnip")
 
     -- File search
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = {{
+            'nvim-lua/plenary.nvim',
+            'BurntSushi/ripgrep',
+        }}
     }
     if packer_bootstrap then
         require('packer').sync()

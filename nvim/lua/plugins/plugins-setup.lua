@@ -42,6 +42,13 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig"
     }
 
+    -- Dap 
+    use("mfussenegger/nvim-dap")
+    use{
+        "rcarriga/nvim-dap-ui",
+        requires = {"mfussenegger/nvim-dap"}
+    }
+
     -- Buffer line
     use {"akinsho/bufferline.nvim", tart = "v1.2.0", requires = "nvim-tree/nvim-web-devicons"}
 
@@ -64,6 +71,10 @@ return require('packer').startup(function(use)
             'BurntSushi/ripgrep',
         }}
     }
+
+    -- Cursor movement
+    use("ggandor/leap.nvim")
+
     if packer_bootstrap then
         require('packer').sync()
     end

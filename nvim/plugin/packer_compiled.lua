@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -128,6 +133,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -159,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope.nvim"] = {
     loaded = true,

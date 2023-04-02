@@ -12,6 +12,7 @@ require("plugins/cmp")
 require("plugins/telescope")
 require("plugins.dap")
 require("plugins/dap-ui")
+require("plugins.terminal")
 
 
 -- plugin without customized config 

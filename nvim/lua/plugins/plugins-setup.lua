@@ -22,13 +22,16 @@ return require('packer').startup(function(use)
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
-           'nvim-tree/nvim-web-devicons', -- optional, for file icons
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
 
     -- Window management
     use("christoomey/vim-tmux-navigator")
+
+    -- Terminal
+    use {"akinsho/toggleterm.nvim", tag = '*'}
 
     -- Color scheme
     use("Mofiqul/vscode.nvim")
@@ -75,7 +78,6 @@ return require('packer').startup(function(use)
     -- Cursor movement
     use("ggandor/leap.nvim")
 
-    -- autopairs
 
     if packer_bootstrap then
         require('packer').sync()

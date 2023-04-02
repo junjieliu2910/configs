@@ -75,6 +75,8 @@ return require('packer').startup(function(use)
     -- Cursor movement
     use("ggandor/leap.nvim")
 
+    -- autopairs
+
     if packer_bootstrap then
         require('packer').sync()
     end

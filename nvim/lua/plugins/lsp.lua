@@ -17,3 +17,6 @@ require("mason-lspconfig").setup({
         "clangd",
     },
 })
+
+require("lspconfig")['clangd'].setup{}
+require("lspconfig")['pyright'].setup{}

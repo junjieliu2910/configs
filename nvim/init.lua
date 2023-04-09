@@ -13,6 +13,7 @@ require("plugins/telescope")
 require("plugins.dap")
 require("plugins/dap-ui")
 require("plugins.terminal")
+require("plugins/session")
 
 
 -- plugin without customized config 

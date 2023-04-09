@@ -33,6 +33,9 @@ return require('packer').startup(function(use)
     -- Terminal
     use {"akinsho/toggleterm.nvim", tag = '*'}
 
+    -- Session management
+    use {"Shatur/neovim-session-manager"}
+
     -- Color scheme
     use("Mofiqul/vscode.nvim")
     use("nvim-treesitter/nvim-treesitter")

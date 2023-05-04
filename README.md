@@ -1,3 +1,1 @@
-This is my personal vim configuration. 
-
-Referring amix/vimrc
+This is the collection of personal configuration files 

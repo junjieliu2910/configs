@@ -14,6 +14,7 @@ require("plugins.dap")
 require("plugins/dap-ui")
 require("plugins.terminal")
 require("plugins/session")
+require("plugins/autopairs")
 
 
 -- plugin without customized config 

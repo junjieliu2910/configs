@@ -81,6 +81,9 @@ return require('packer').startup(function(use)
     -- Cursor movement
     use("ggandor/leap.nvim")
 
+    -- AutoPairs 
+    use("windwp/nvim-autopairs")
+
 
     if packer_bootstrap then
         require('packer').sync()

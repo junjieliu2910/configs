@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
     url = "https://github.com/Shatur/neovim-session-manager"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/junjieliu/.local/share/nvim/site/pack/packer/start/nvim-cmp",

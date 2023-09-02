@@ -84,6 +84,14 @@ return require('packer').startup(function(use)
     -- AutoPairs 
     use("windwp/nvim-autopairs")
 
+    -- Comments 
+    use {
+        "numToStr/Comment.nvim",
+        config = function()
+            require("Comment").setup()
+        end
+    }
+
 
     if packer_bootstrap then
         require('packer').sync()

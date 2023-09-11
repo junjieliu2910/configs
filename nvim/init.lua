@@ -1,21 +1,5 @@
-require("plugins.plugins-setup")
-require("core.options")
-require("core.keymaps")
-
--- plugin config
-require("plugins/lualine")
-require("plugins/nvimtree")
-require("plugins/treesitter")
-require("plugins/lsp")
-require("plugins/bufferline")
-require("plugins/cmp")
-require("plugins/telescope")
-require("plugins.dap")
-require("plugins/dap-ui")
-require("plugins.terminal")
-require("plugins/session")
-require("plugins/autopairs")
-
-
--- plugin without customized config 
-require("leap").add_default_mappings()
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.keymaps")
+require("config.options")
+require("config.autocmds")
+require("config.lazy")

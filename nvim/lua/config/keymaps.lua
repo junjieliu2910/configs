@@ -18,10 +18,6 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 keymap.set("n", ",<CR>", ":noh<CR>")
 
 
--- toggle nvim tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-
-
 -- Jump between tabs
 keymap.set("n", "<space>l", ":bnext<CR>")
 keymap.set("n", "<space>h", ":bprevious<CR>")

@@ -13,6 +13,6 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  --install = { colorscheme = { "tokyonight"} },
   checker = { enabled = true }, -- automatically check for plugin updates
 })

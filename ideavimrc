@@ -77,8 +77,8 @@ nnoremap <leader>b :action ToggleLineBreakpoint<cr>
 nnoremap <leader>fs :action FileStructurePopup<cr>
 nnoremap <leader>fp :<C-u>action FindInPath<cr>
 nnoremap <leader>ga :<C-u>action GotoAction<cr>
-nnoremap <leader>gf :<C-u>action GotoFile<cr>
-nnoremap <leader>gc :<C-u>action GotoClass<cr>
+nnoremap <leader>ff :<C-u>action GotoFile<cr>
+nnoremap <leader>fc :<C-u>action GotoClass<cr>
 nnoremap <leader>t :<C-u>action ActivateTerminalToolWindow<cr>
 nnoremap <leader>mt :<C-u>action MoveEditorToOppositeTabGroup<cr>
 nnoremap <leader>se :<C-u>action ShowErrorDescription<cr>

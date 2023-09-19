@@ -9,7 +9,7 @@ return {
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-cmdline",
     "hrsh7th/cmp-nvim-lua",
-    "saadparwaiz1/cmp_luasnip",
+   -- "saadparwaiz1/cmp_luasnip",
   },
   opts = function()
     vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })

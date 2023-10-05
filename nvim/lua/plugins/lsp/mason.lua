@@ -15,7 +15,7 @@ return {
       { "gi", "<cmd>Telescope lsp_implementations<cr>", desc = "Show lsp implementations"},
       { "gy", "<cmd>Telescope lsp_type_definitions<cr>", desc = "Show type information"},
       { "<leader>se", vim.lsp.buf.code_action, desc = "Show errors / code actions"},
-      { "<leader>dc", vim.lsp.buf.hover, desc = "Show help doc" }
+      { "<leader>sd", vim.lsp.buf.hover, desc = "Show help doc" }
     },
 
     config = function()

@@ -160,6 +160,7 @@ return {
   -- indent guides for Neovim
   {
     "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
     event = { "BufReadPost", "BufNewFile" },
     opts = {
       -- char = "▏",
@@ -179,6 +180,9 @@ return {
       show_trailing_blankline_indent = false,
       show_current_context = false,
     },
+    config = function() 
+      require("ibl").setup()
+    end,
   },
 
   -- folding

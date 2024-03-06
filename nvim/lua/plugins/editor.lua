@@ -14,6 +14,7 @@ return {
         ["["] = { name = "+prev" },
         ["<leader><tab>"] = { name = "+tabs" },
         ["<leader>b"] = { name = "+buffer" },
+        ["<leader>t"] = { name = "+terminal" },
        -- ["<leader>c"] = { name = "+code" },
         ["<leader>f"] = { name = "+file/find" },
        -- ["<leader>g"] = { name = "+git" },
@@ -21,7 +22,7 @@ return {
        -- ["<leader>q"] = { name = "+quit/session" },
        -- ["<leader>s"] = { name = "+search" },
        -- ["<leader>u"] = { name = "+ui" },
-       -- ["<leader>w"] = { name = "+windows" },
+        ["<leader>w"] = { name = "+windows" },
        -- ["<leader>x"] = { name = "+diagnostics/quickfix" },
       },
     },
@@ -204,5 +205,17 @@ return {
       })
     end,
   },
+
+
+  -- Toogle terminal 
+  {
+    -- amongst your other plugins
+    'akinsho/toggleterm.nvim', 
+    version = "*", 
+    config = true,
+    keys = {
+
+    }
+  }
 }
 

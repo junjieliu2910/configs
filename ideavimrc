@@ -82,4 +82,5 @@ nnoremap <leader>fc :<C-u>action GotoClass<cr>
 nnoremap <leader>t :<C-u>action ActivateTerminalToolWindow<cr>
 nnoremap <leader>mt :<C-u>action MoveEditorToOppositeTabGroup<cr>
 nnoremap <leader>se :<C-u>action ShowErrorDescription<cr>
-
+" Works for all languages
+nnoremap <leader>sd :<C-u>action QuickJavaDoc<cr>

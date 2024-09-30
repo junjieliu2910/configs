@@ -4,7 +4,9 @@
 
     // Editor general settings
     "editor.lineNumbers": "relative",
+    // Use easy motion
     "vim.easymotion": true,
+    // Use system clipboard
     "vim.useSystemClipboard": true,
     "vim.smartRelativeLine": true,
     "vim.hlsearch": true,
@@ -110,6 +112,16 @@
             "before": ["<C-h>"],
             "commands": ["workbench.action.focusPreviousGroup"]
         },
+        // emulate page up
+        {
+            "before": ["<C-u>"],
+            "commands": ["cursorPageUp"]
+        },
+        // page duwm
+        {
+            "before": ["<C-d>"],
+            "commands": ["cursorPageDown"]
+        },
         // Split editor vertically
         {
             "before": ["<leader>", "s", "v"],
@@ -135,6 +147,11 @@
             "before": ["<leader>", "e"],
             "commands": ["workbench.view.explorer"]
         },
+        // easy motion start of word
+        {
+            "after": ["<leader>", "<leader>", "w"],
+            "before": ["vim.easymontion"],
+        },
     ],
     "vim.commandModeKeyBindingsNonRecursive": [
     ],
@@ -142,5 +159,5 @@
     "vim.handleKeys": {
         "<C-,>": false,
     },
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
 }

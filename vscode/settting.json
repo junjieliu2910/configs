@@ -160,4 +160,17 @@
         "<C-,>": false,
     },
     "editor.minimap.enabled": false,
+    "debug.onTaskErrors": "showErrors",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "clangd.detectExtensionConflicts": false,
+    "C_Cpp.errorSquiggles": "enabled",
+    "editor.formatOnSave": true,
+    "C_Cpp.formatting": "clangFormat",
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.revealIfOpen": true,
 }
